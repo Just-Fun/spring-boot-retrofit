@@ -7,7 +7,6 @@ import okhttp3.OkHttpClient;
 import org.apache.log4j.Logger;
 import org.springframework.stereotype.Component;
 import retrofit2.Call;
-import retrofit2.Callback;
 import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
@@ -42,7 +41,7 @@ public class ApiHandler {
         String result = "success";
 
 //        асинхронный  метод
-        call.enqueue(new Callback<String>() {
+        /*call.enqueue(new Callback<String>() {
             @Override
             public void onResponse(Call<String> call, Response<String> response) {
                 // handle success
@@ -60,10 +59,10 @@ public class ApiHandler {
                 // something went completely south (like no internet connection)
                 log.info("Error", t);
             }
-        });
+        });*/
         /*Код, представленный выше выполняет запрос в фоновом потоке, после в главном потоке вызывает метод onResponse или onFailure, в зависимости от результата. Для извлечения ответа от сервера используйте response.body().*/
 
-      /*  try {
+        try {
             Response response = call.execute();
 
             if (response.body() == null) {
@@ -74,7 +73,7 @@ public class ApiHandler {
         } catch (IOException e) {
             result = "connectionFailure";
             log.info("Error getting...");
-        }*/
+        }
         return result;
     }
 
