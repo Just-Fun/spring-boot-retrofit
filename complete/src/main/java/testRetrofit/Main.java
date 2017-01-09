@@ -23,7 +23,13 @@ public class Main {
         executorService.execute(futureTask1);
         executorService.execute(futureTask2);
 
+
         executorService.shutdown();
+
+        while (!executorService.isTerminated()) {
+            // wait until executing completed
+        }
+        System.out.println("Done!!!!!!");
         /*boolean b = true;
         while (b) {
                 if (futureTask1.isDone() && futureTask2.isDone()) {
