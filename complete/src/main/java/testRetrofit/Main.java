@@ -1,9 +1,5 @@
 package testRetrofit;
 
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.concurrent.FutureTask;
-
 /**
  * Created by Serzh on 12/25/16.
  */
@@ -14,7 +10,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        ExecutorService executorService = Executors.newFixedThreadPool(2);
+        /*ExecutorService executorService = Executors.newFixedThreadPool(2);
 
 
         FutureTask<String> futureTask2 = new FutureTask<>(() -> justPrint());
@@ -23,13 +19,12 @@ public class Main {
         executorService.execute(futureTask1);
         executorService.execute(futureTask2);
 
-
         executorService.shutdown();
 
         while (!executorService.isTerminated()) {
             // wait until executing completed
         }
-        System.out.println("Done!!!!!!");
+        System.out.println("Done!!!!!!");*/
         /*boolean b = true;
         while (b) {
                 if (futureTask1.isDone() && futureTask2.isDone()) {
@@ -40,6 +35,10 @@ public class Main {
                 }
         }*/
 
+//        new Thread(() -> retrofit()).start();
+//        new Thread(() -> justPrint()).start();
+
+        justPrint();
     }
 
     private static String retrofit() {
@@ -55,6 +54,7 @@ public class Main {
     }
 
     private static String justPrint() {
+        new Thread(() -> retrofit()).start();
         System.out.println("Print...");
         return "Print!!!!!!!!!";
     }
