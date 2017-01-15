@@ -1,5 +1,7 @@
 package testRetrofit;
 
+import java.util.concurrent.atomic.AtomicReference;
+
 /**
  * Created by Serzh on 12/25/16.
  */
@@ -10,6 +12,19 @@ public class Main {
 
     public static void main(String[] args) {
 
+        System.out.println("sfjdg");
+        if ("cc".equals("df")) {
+
+        }
+        boolean df = "cc".equals("df");
+        AtomicReference<String> jhg = new AtomicReference<>("jhg");
+        String jhg1 = "jhg";
+        String jhg2 = "jhg";
+
+        int[] j = new int[]{1, 9, 8};
+        for (int i : j) {
+
+        }
         /*ExecutorService executorService = Executors.newFixedThreadPool(2);
 
 
