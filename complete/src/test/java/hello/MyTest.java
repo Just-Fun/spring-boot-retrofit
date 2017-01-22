@@ -76,4 +76,5 @@ public class MyTest {
         });
         assertNotNull(thrown.getMessage());
     }
+
 }
