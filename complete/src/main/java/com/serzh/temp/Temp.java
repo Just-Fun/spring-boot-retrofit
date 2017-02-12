@@ -1,4 +1,4 @@
-package hello;
+package com.serzh.temp;
 
 import java.util.Arrays;
 import java.util.HashMap;

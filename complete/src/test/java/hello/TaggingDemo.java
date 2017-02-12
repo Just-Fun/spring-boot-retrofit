@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
  */
 
 @Tag("fast")
-@Tag("model")
+@Tag("com/serzh/model")
 class TaggingDemo {
 
     @Test

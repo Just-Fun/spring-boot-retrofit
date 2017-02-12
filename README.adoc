@@ -45,7 +45,7 @@ These are just a few examples of the automatic configuration Spring Boot provide
 NOTE: Spring Boot doesn't generate code or make edits to your files. Instead, when you start up your application, Spring Boot dynamically wires up beans and settings and applies them to your application context.
 
 == Create a simple web application
-Now you can create a web controller for a simple web application.
+Now you can create a web com.serzh.controller for a simple web application.
 
 `src/main/java/hello/HelloController.java`
 [source,java]
@@ -55,13 +55,13 @@ include::initial/src/main/java/hello/HelloController.java[]
     
 The class is flagged as a `@RestController`, meaning it's ready for use by Spring MVC to handle web requests. `@RequestMapping` maps `/` to the `index()` method. When invoked from a browser or using curl on the command line, the method returns pure text. That's because `@RestController` combines `@Controller` and `@ResponseBody`, two annotations that results in web requests returning data rather than a view.
 
-== Create an Application class
-Here you create an `Application` class with the components:
+== Create an com.serzh.Application class
+Here you create an `com.serzh.Application` class with the components:
 
-`src/main/java/hello/Application.java`
+`src/main/java/hello/com.serzh.Application.java`
 [source,java]
 ----
-include::initial/src/main/java/hello/Application.java[]
+include::initial/src/main/java/hello/com.serzh.Application.java[]
 ----
 
 include::https://raw.githubusercontent.com/spring-guides/getting-started-macros/master/spring-boot-application.adoc[]

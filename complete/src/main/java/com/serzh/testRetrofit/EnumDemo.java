@@ -1,4 +1,4 @@
-package testRetrofit;
+package com.serzh.testRetrofit;
 
 /**
  * Created by Serzh on 1/14/17.

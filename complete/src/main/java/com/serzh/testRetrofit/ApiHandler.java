@@ -1,7 +1,7 @@
 /**
  * Created by dimonik on 20.11.16.
  */
-package testRetrofit;
+package com.serzh.testRetrofit;
 
 import okhttp3.OkHttpClient;
 import org.apache.log4j.Logger;
